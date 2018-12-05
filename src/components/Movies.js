@@ -27,7 +27,7 @@ export class Movies extends Component {
 			return this.setState({ moviesToShow: movies });
 		}
 		movies.forEach((movie) => {
-			if (movie.name.includes(name)) {
+			if (movie.name.toLowerCase().includes(name.toLowerCase())) {
 				moviesArr.push(movie);
 			}
 		});
