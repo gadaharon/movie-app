@@ -1,32 +1,67 @@
-.App {
-  text-align: center;
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: black;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.search-bar {
+	width: '85%';
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 3rem;
+	margin: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-bar input {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.movies-list {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-card {
+	margin: 2rem auto;
+	width: 70%;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 1rem;
+}
+
+.card {
+	display: flex;
+	justify-content: space-around;
+}
+
+.button {
+	text-decoration: none;
+	padding: 10px;
+	background-color: #5bc0de;
+}
+
+.back-button {
+	color: #fff;
+	text-decoration: none;
+	margin: 15px;
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.movie-list-item {
+	background-color: rgba(255, 255, 255, 0.4);
+	width: 25%;
+	margin-bottom: 1rem;
+	padding: 15px;
+}
+
+@media (max-width: 600px) {
+	.card {
+		flex-direction: column;
+	}
 }
